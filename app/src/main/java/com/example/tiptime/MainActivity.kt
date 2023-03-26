@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculateTip() {
         //convert to string first because the EditText is editable, baru can use.
-        val stringInTextField = binding.costOfService.text.toString()
+        val stringInTextField = binding.costOfServiceEditText.text.toString()
         val cost = stringInTextField.toDoubleOrNull()
             if (cost == null) {
                 binding.tipResult.text = ""
